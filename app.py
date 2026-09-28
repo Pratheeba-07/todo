@@ -214,8 +214,7 @@ st.markdown("""
 # LOAD AI OUTPUT
 # ============================================================
 
-DATA_FILE = "../02_AI_Output/AI_Bearing_Prediction_Final.csv"
-
+DATA_FILE = "AI_Bearing_Prediction_Final.csv"
 try:
     df = pd.read_csv(DATA_FILE)
 except FileNotFoundError:
@@ -388,7 +387,7 @@ st.divider()
 # HEALTH OVERVIEW
 # ============================================================
 
-health_file = "../02_AI_Output/AI_Bearing_Prediction_Final.csv"
+health_file = "AI_Bearing_Prediction_Final.csv"
 health_data = pd.read_csv(health_file)
 
 healthy_count = (health_data["Health_Status"] == "Healthy").sum()
